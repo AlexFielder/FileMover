@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{2E0CEECD-AEE1-4044-B989-DB03CE198B24}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>FileMover2</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\README.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\objects\21\27129b68e72ec94d36895916c8fb5e6b3974af" />
+    <None Include=".git\objects\26\79f9d22a595b6c02a55bdf82380e24b689264c" />
+    <None Include=".git\objects\29\0bd330057367394a2d49828fa16d8357b130af" />
+    <None Include=".git\objects\31\45b5ff80c032659b4c18638df7153f71384636" />
+    <None Include=".git\objects\35\f0d180294aa90e2aede95e7dc2b682b35a4137" />
+    <None Include=".git\objects\39\d00253abe593229837f4b09864dcb23e9ce532" />
+    <None Include=".git\objects\4a\8d162397043c828b08959c64894d74f1825d0c" />
+    <None Include=".git\objects\52\2acb1342cb0ffac4500484c83e97f73d84b614" />
+    <None Include=".git\objects\76\d8c8d9c9d2a36e9a777b9c3176975edb4dc515" />
+    <None Include=".git\objects\7c\d9fc16041e8f1b4cc24e9d9e21bc57e38b1e9a" />
+    <None Include=".git\objects\9c\a4d3e80ae047dbd454063cbdb6aa93d8ae5511" />
+    <None Include=".git\objects\ad\bcb746f477dc3c1253a4630d8760d62f79751e" />
+    <None Include=".git\objects\ba\d23056162ec4d1349fcaa2e67155d5fe90679d" />
+    <None Include=".git\objects\d1\98d92bf730c6d6cf6344b6cf1246720dfd025c" />
+    <None Include=".git\objects\d7\c444cb1214382e5c6bbe63824aa9b39990c894" />
+    <None Include=".git\refs\heads\master" />
+    <None Include="FileMover\bin\Debug\FileMover.vshost.exe.manifest" />
+    <None Include="FileMover\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="FileMover\obj\Debug\FileMover.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="FileMover\bin\Debug\FileMover.exe" />
+    <Content Include="FileMover\bin\Debug\FileMover.pdb" />
+    <Content Include="FileMover\bin\Debug\FileMover.vshost.exe" />
+    <Content Include="FileMover\FileMover.csproj" />
+    <Content Include="FileMover\obj\Debug\FileMover.csproj.FileListAbsolute.txt" />
+    <Content Include="FileMover\obj\Debug\FileMover.exe" />
+    <Content Include="FileMover\obj\Debug\FileMover.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileMover\Program.cs" />
+    <Compile Include="FileMover\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="FileMover\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
