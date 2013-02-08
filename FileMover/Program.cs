@@ -43,9 +43,25 @@ namespace FileMover
                                 BookName= ebook[1]
                             };
                         bookNames.Add(book);
+                        if(Directory.Exists(filePath + ebook[0]))
+                        {
+                            if(!File.Exists(filePath + ebook[0] + @"\" + match))
+                            {
+                                File.Move(file, filePath + ebook[0] + @"\" + match);
+                            }
+                        }
+                        else if (!Directory.Exists(filePath + ebook[0]))
+                        {
+                            Directory.CreateDirectory(filePath + ebook[0]);
+                            if(!File.Exists(filePath + ebook[0] + @"\" + match))
+                            {
+                                File.Move(file, filePath + ebook[0] + @"\" + match);
+                            }
+                        }
                     }
                 }
             }
+
         }
 
     }
